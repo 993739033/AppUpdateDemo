@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="140dp"
+    android:background="@drawable/bg_dialog_center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="正在更新中请耐心等待"
+            style="15sp"
+            android:gravity="center"
+            android:background="@color/app_color_1"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <ProgressBar
+            android:layout_margin="20dp"
+            android:id="@+id/pb_update"
+            android:progress="0"
+            android:max="100"
+            android:min="0"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="0%"
+            android:gravity="center"
+            android:textColor="@color/app_color_4"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_cancel_update"
+                android:layout_alignParentLeft="true"
+                android:text="取消下载"
+                android:textColor="@color/app_color_1"
+                android:gravity="center|right"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_in_backstage"
+                android:text="后台更新"
+                android:textColor="@color/app_color_1"
+                android:gravity="center|right"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
